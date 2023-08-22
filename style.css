@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Poppins;
+}
+
+nav{
+    background-color: rgb(75, 234, 157);
+    width: 100%;   
+    top: 0;
+    position: fixed;
+}
+
+footer{
+    background-color: rgb(75, 234, 157);
+    width: 100%;
+    color: white;
+    line-height: 65px;
+    font-size: 25px;   
+}
+
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 50px;
+    font-weight: bold;
+}
+
+.menu{
+    float: right;
+    margin-right: 40px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+.btn-nav{
+    color: white;
+    font-size: 17px;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+.btn-nav.aktif, .btn-nav:hover{
+    background: rgb(168, 254, 213);
+    color: black;
+}
+
+tr{
+    line-height:30px;
+}
+
+.judul{
+    margin: 10px 10px 5px 20px;
+    color: rgb(0, 166, 86);
+}
+
+div.level{
+    background-color: rgb(168, 254, 213);
+    width: 100%;
+    border-radius: 10px;
+}
+
+div.level1{
+    background-color: rgb(0, 166, 86);
+    color: white;
+    line-height: 20px;
+    border-radius: 10px;
+    font-size: 13px;
+}
+
+.kontak{
+    background: rgb(168, 254, 213);
+    color: black;
+    padding: 7px 10px;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.kontak:hover{
+    background: rgb(0, 166, 86);
+    color: white;
+}
+
+.sosmed{
+    width: 230px;
+}
+
+div.batas{
+    background-color: rgb(75, 234, 157);
+    line-height: 100%;
+    color: rgb(75, 234, 157);
+    border-radius: 5px;
+}
+
+.section, .section-2{
+    padding-top: 80px;
+}
+
+.artikel-p, .artikel, .artikel-s{
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.profil, .profil-g{
+    padding: 10px 0;
+    border: rgb(0, 166, 86) 2px solid;
+    border-radius: 5px;
+}
+
+.profil{
+    width: 32%;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 1%;
+}
+
+.profil-g{
+    width: 30%;
+    margin-left: 1.5%;
+}
+
+.foto1{
+    padding: 10px 0;
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.kolom1{
+    width: 35%;
+    font-weight: bold;
+}
+
+.kolom3{
+    width: 63%;
+}
+
+table.essai1{
+    width: 94%;
+    margin-left: 3%;
+    border: rgb(0, 166, 86) 2px solid;
+    border-radius: 5px;
+}
+
+.section-2{
+    width: 50%;
+}
+
+.kolom-edu, .kolom-edu1, .kolom-act, .kolom-act1{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.kolom-edu1{
+    width: 55%;
+}
+
+.kolom-act1{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 40%;
+}
+
+.kolom-hobi{
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.btn-cek{
+    color: white;
+    font-size: 30px;
+    line-height: 60px;
+    float: left;
+    margin-left: 40px;
+    padding: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+}
+
+#cek{
+    display: none;
+}
+
+@media only screen and (max-width: 1038px){
+    .logo{
+        float: right;
+    }
+
+    .btn-cek{
+        display: block;
+    }
+
+    .btn-cek i:hover{
+        background: rgb(0, 166, 86);
+        padding: 10px;
+        border-radius: 5px;
+        transition: all .5s;
+    }
+
+    ul{
+        position: fixed;
+        width: 200px;
+        height: 100%;
+        background: rgb(75, 234, 157);
+        top: 80px;
+        text-align: center;
+        left: -100%;
+        transition: all .5s;
+    }
+
+    nav ul li{
+        display: block;
+        line-height: 70px;
+    }
+
+    .btn-nav{
+        color: white;
+        font-size: 17px;
+        border-radius: 5px;
+    }
+
+    .btn-nav:hover{
+        background: none;
+        color: rgb(0, 166, 86);
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    #cek:checked ~ ul{
+        left: 0;
+    }
+
+    #cek:checked:hover ~ ul{
+        background: rgb(0, 166, 86);
+    }
+
+    .artikel-p{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .profil{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .profil-g{
+        padding-left: 28%;
+        padding-right: 28%;
+    }
+    
+    .profil-g, .profil{
+        width: 97%;
+        margin-left: 1.5%;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border: rgb(0, 166, 86) 2px solid;
+        border-radius: 5px;
+    }
+
+    .foto1{
+        height: 400px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (max-width: 723px) { 
+    .artikel{
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+        margin-bottom: 10px;
+    }
+
+    .section-2{
+        width: 100%;
+    }
+
+    div.batas{
+        background-color: rgb(75, 234, 157);
+        width: 90%;
+        line-height: 10px;
+        margin-left: 5%;
+        color: rgb(75, 234, 157);
+        border-radius: 5px;
+    }
+
+    .sosmed{
+        margin-left: 15%;
+        margin-right: 15%;
+        width: 70%;
+    }
+
+    table.essai1{
+        width: 97%;
+        margin-left: 1.5%;
+    }
+
+}
+
+
+;
